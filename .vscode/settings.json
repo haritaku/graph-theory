@@ -1,0 +1,13 @@
+{
+    "autoDocstring.docstringFormat": "google",
+    "python.linting.flake8Enabled": true,
+    "python.linting.flake8Path": ".venv/bin/flake8",
+    "python.linting.flake8Args": [
+        "--ignore=E501"
+    ],
+    "editor.formatOnSave": true,
+    "python.formatting.autopep8Path": ".venv/bin/autopep8",
+    "python.formatting.autopep8Args": [
+        "--ignore=E501"
+    ]
+}

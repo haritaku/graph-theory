@@ -8,7 +8,7 @@ import numpy as np
 def plot_graph(graph, seed=0):
 
     if type(graph) is not nx.classes.multigraph.MultiGraph:
-        raise ValueError('graph must be MultiGraph object.')
+        raise ValueError('Graph must be "MultiGraph" object.')
 
     fig, ax = plt.subplots(facecolor='white')
     pos = nx.spring_layout(graph, seed=seed)
@@ -34,7 +34,7 @@ def plot_graph(graph, seed=0):
 def incicence2adjacency(inc_arr):
 
     if np.isin(inc_arr, [0, 1], invert=True).sum():
-        raise ValueError('Incidence matrix has except for 0 or 1.')
+        raise ValueError('Incidence matrix has values except for 0 or 1.')
 
     if (inc_arr.sum(axis=0) != 2).sum():
         raise ValueError('Incidence matrix doesn\'t satisfy handshaking lemma.')

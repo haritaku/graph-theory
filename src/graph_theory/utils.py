@@ -5,10 +5,13 @@ import networkx as nx
 import numpy as np
 
 
-def plot_graph(graph, seed=0):
+def plot_graph(graph: nx.classes.multigraph.MultiGraph, seed: int = 0):
+    """グラフをプロットする関数
 
-    if type(graph) is not nx.classes.multigraph.MultiGraph:
-        raise ValueError('Graph must be "MultiGraph" object.')
+    Args:
+        graph: グラフ
+        seed: シード値。デフォルトは0
+    """
 
     fig, ax = plt.subplots(facecolor='white')
     pos = nx.spring_layout(graph, seed=seed)

@@ -19,5 +19,5 @@ help:
 %: Makefile
 	@$(SPHINXBUILD) -M $@ "$(SOURCEDIR)" "$(BUILDDIR)" $(SPHINXOPTS) $(O)
 
-livereload:
-	sphinx-autobuild -b singlehtml $(SOURCEDIR) $(BUILDDIR)/singlehtml
+live:
+	sphinx-autobuild $(SOURCEDIR) $(BUILDDIR)/html

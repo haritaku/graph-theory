@@ -10,5 +10,6 @@
     "python.formatting.autopep8Args": [
         "--ignore=E501"
     ],
-    "restructuredtext.confPath": "${workspaceFolder}/sphinx"
+    "restructuredtext.builtDocumentationPath": "${workspaceRoot}/sphinx/build/html",
+    "restructuredtext.confPath": "${workspaceFolder}/sphinx/source"
 }

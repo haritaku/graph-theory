@@ -10,5 +10,8 @@
     "editor.formatOnSave": true,
     "python.formatting.blackPath": ".venv/bin/black",
     "restructuredtext.builtDocumentationPath": "${workspaceRoot}/docs/_build/html",
-    "restructuredtext.confPath": "${workspaceFolder}/docs/"
+    "restructuredtext.confPath": "${workspaceFolder}/docs/",
+    "editor.codeActionsOnSave": {
+        "source.organizeImports": true
+    }
 }

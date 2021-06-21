@@ -16,9 +16,9 @@ sphinx-rtd-theme = "0.5.2"
 [tool.poetry.dev-dependencies]
 jupyterlab = "^3.0.16"
 flake8 = "^3.9.2"
-autopep8 = "^1.5.7"
 pytest = "^6.2.4"
 sphinx-autobuild = "^2021.3.14"
+black = "^21.6b0"
 
 [build-system]
 requires = ["poetry-core>=1.0.0"]

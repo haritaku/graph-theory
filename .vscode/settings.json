@@ -3,13 +3,12 @@
     "python.linting.flake8Enabled": true,
     "python.linting.flake8Path": ".venv/bin/flake8",
     "python.linting.flake8Args": [
-        "--ignore=E501"
+        "--max-line-length=120",
+        "--ignore=E203,E501,W503,W504"
     ],
+    "python.formatting.provider": "black",
     "editor.formatOnSave": true,
-    "python.formatting.autopep8Path": ".venv/bin/autopep8",
-    "python.formatting.autopep8Args": [
-        "--ignore=E501"
-    ],
+    "python.formatting.blackPath": ".venv/bin/black",
     "restructuredtext.builtDocumentationPath": "${workspaceRoot}/docs/_build/html",
     "restructuredtext.confPath": "${workspaceFolder}/docs/"
 }
